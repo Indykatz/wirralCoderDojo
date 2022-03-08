@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Wirral CoderDojo</title>
+        <meta name="description" content="Wirral CoderDojo">
+        <meta name="author" content="Katherine Ayers">
+        <link rel="stylesheet" href="main.css">
+        <!-- hamburger -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- view -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<!-- Body -->
+<body> 
+    <!-- Header -->
+    <div class="header">
+        <h1>Wirral CoderDojo</h1>
+    </div>
+    <!-- Nav bar -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" >Home</a>
+      <a href="volunteers.html">Volunteers</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="https://www.wirralcodeclub.org" target="_blank">CodeClub</a>
+      <a  target="_blank" span onclick="openNav()">External Links</span>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+    <!-- side nav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://projects.raspberrypi.org/en/codeclub" target="_blank">Raspberry Pi</a>
+        <a href="https://projects.raspberrypi.org/en/coderdojo" target="_blank">CoderDojo</a>
+        <a href="https://scratch.mit.edu" target="_blank">Scratch</a>
+      </div>
+      
+    <!-- Main -->
+    <div class="content">
+      <div class="row">
+          <div class="leftColumn">
+              <div class="imgFrame">
+                  <!-- <img src="" alt=""> -->
+              </div>
+          </div>
+          <div class="rightColumn">
+              <h2>COMING SOON</h2>
+
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+<!-- JavaScript -->
+<!-- responive nav bar hamburger menu -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+    <!-- footer -->
+    <div id = "footer">Thank you for visiting<p>
+        <a href="projects.html">Return to top</a></p>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Wirral CoderDojo</title>
+        <meta name="description" content="Wirral CoderDojo">
+        <meta name="author" content="Katherine Ayers">
+        <link rel="stylesheet" href="main.css">
+        <!-- hamburger -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- view -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<!-- Body -->
+<body> 
+    <!-- Header -->
+    <div class="header">
+        <h1>Wirral CoderDojo</h1>
+    </div>
+    <!-- Nav bar -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="volunteers.html" class="active">Volunteers</a>
+      <a href="projects.html">Projects</a>
+      <a href="https://www.wirralcodeclub.org" target="_blank">CodeClub</a>
+      <a  target="_blank" span onclick="openNav()">External Links</span>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div>
+    <!-- side nav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://projects.raspberrypi.org/en/codeclub" target="_blank">Raspberry Pi</a>
+        <a href="https://projects.raspberrypi.org/en/coderdojo" target="_blank">CoderDojo</a>
+        <a href="https://scratch.mit.edu" target="_blank">Scratch</a>
+      </div>
+  
+    <!-- Main -->
+    <div class="content">
+      <div class="row">
+          <div class="leftColumn">
+              <div class="imgFrame">
+                  <img src="images/me.jpeg" alt="A Picture of Kat">
+              </div>
+          </div>
+          <div class="rightColumn">
+              <h2>Kat</h2>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo ad ab voluptatem nisi non magnam sequi, ratione possimus labore optio, ducimus aperiam. Inventore accusamus reprehenderit placeat fugiat qui doloremque labore, sint ducimus facilis pariatur quia quasi, ipsum beatae, distinctio aut excepturi consequatur architecto nam perspiciatis corrupti! Cupiditate illum accusamus iste minus quo excepturi explicabo nulla provident natus, suscipit voluptatum aspernatur laudantium rem repellendus debitis id maxime cum libero esse magni obcaecati eum beatae eos. Quisquam inventore omnis deleniti distinctio, optio, ducimus dolores debitis vel eligendi magni, nostrum nobis voluptatem natus voluptatum adipisci eius quam sapiente aliquid. Sit, deleniti blanditiis!
+          </div>
+      </div>
+  </div>
+
+<!-- JavaScript -->
+<!-- responive nav bar hamburger menu -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+    <!-- footer -->
+    <div id = "footer">Thank you for visiting<p>
+        <a href="volunteers.html">Return to top</a></p>
+    </div>
+
+</body>
+</html>
+
